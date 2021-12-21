@@ -1,0 +1,18 @@
+Package: StatComp21052
+Type: Package
+Title: This package provides two functions to solve square-root lasso and measure the performance of lasso
+Version: 1.0
+Date: 2021-12-11
+Author: Xiaoyan Chen
+Maintainer: Xiaoyan Chen <1641207431@qq.com>
+Description: The "sqrootlasso" function is to estimate the regression coefficient by using square-root lasso in high-dimensional linear regression model,
+      and the "avermiss" function is to measure the performance off lasso by calculating the average number of regressors missed from the true model,the average number of regressors selected outside the model and relative average empirical risk.
+License: GPL (>= 2)
+Imports: Rcpp, microbenchmark, knitr, rmarkdown, Matrix, glmnet, forecast, MASS, bootstrap, boot, Ball, energy, RANN, parallel
+LinkingTo: Rcpp
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: http://github.com/123xiao4/StatComp21052
+Bugrepports: http://github.com/123xiao4/StatComp21052/issues 
+RoxygenNote: 7.1.2
+Encoding: UTF-8

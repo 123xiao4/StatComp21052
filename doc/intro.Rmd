@@ -1,0 +1,30 @@
+---
+title: "Introducntion for personal function"
+author: "Xiaoyan Chen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introducntion for personal function}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+      
+--- 
+
+## square-rootlasso function
+A pivotal method for estimating high-dimensional
+sparse linear regression models, where the overall number of regressors p is large, possibly much larger than n, but only s regressors are significant. The method is a modification of the lasso, called the square-root lasso.\
+We consider the linear regression model for outcome $y_i$ given fixed p-dimensional
+regressors $x_i$:$y_i=x_i' \beta+\sigma \epsilon_i \quad (i=1,...,n)$ with independent and identically distributed noise 
+$ \epsilon_i (i=1,...,n) $.\
+The square-root lasso estimator of $\beta$ is defined as the solution to the optimization problem:
+$\hat{\beta} \in argmin_{\beta \in R^p} {\hat{Q(\beta)}}^{1/2}+\frac{\lambda}{n}||\beta||_1,$\
+with the penalty level:$\lambda=c\sqrt{n}\Phi^{-1}(1-\alpha/2p)$ for constant c>1.\
+where $\hat{Q(\beta)}=\frac{1}{n}\sum_{i=1}^n (y_i-x_i'\beta)^2$ and $||\beta||_1=\sum_{j=1}^p |\beta_j|$\
+
+
+
+## avermiss function
+The "avermiss" function is to measure the performance off lasso by  calculating the average number of regressors missed from the true     model,the average number of regressors selected outside the model and relative average empirical risk.\
+The function is only for simulation,so you need to set the real regression coefficients and the standard deviation of error.
+
+

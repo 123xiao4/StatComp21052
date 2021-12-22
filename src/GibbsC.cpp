@@ -1,6 +1,8 @@
 #include <Rcpp.h>
 using namespace Rcpp;
+
 //' @title A Gibbs sampler using Rcpp 
+//' @name GibbsC
 //' @description A Gibbs sampler using Rcpp
 //' @param n the number of sample
 //' @param n1 the number of between-sample random numbers

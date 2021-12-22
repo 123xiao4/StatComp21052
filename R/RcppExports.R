@@ -2,6 +2,7 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 #' @title A Gibbs sampler using Rcpp 
+#' @name GibbsC
 #' @description A Gibbs sampler using Rcpp
 #' @param n the number of sample
 #' @param n1 the number of between-sample random numbers
